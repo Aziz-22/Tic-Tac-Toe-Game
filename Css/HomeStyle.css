@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.NavBarDiv {
+    background-image: url("../Images/istockphoto-1061119906-612x612.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.NavTag {
+    padding-left: 30px;
+}
+
+.NavTag li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 20px;
+    padding-top: 60px;
+    margin-bottom: 100px;
+}
+
+.anchorsList {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Cursor Mouse Pointer*/
+
+.anchorsList:hover {
+    cursor: pointer;
+    color: gold;
+}
