@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.NavBarDiv {
+    background-image: url("../Images/istockphoto-1061119906-612x612.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.NavTag {
+    padding-left: 30px;
+}
+
+.NavTag li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 20px;
+    padding-top: 60px;
+    margin-bottom: 100px;
+}
+
+.anchorsList {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Cursor Mouse Pointer*/
+
+.anchorsList:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+.NameOfAGame {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 105px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.Instruction {
+    display: grid;
+    grid-column-start: 2;
+    margin-left: -50px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+
+/* Grid Section */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 143px 143px 143px;
+    background-color: lightgrey;
+    padding: 30px;
+    justify-content: center;
+    position: relative;
+    padding-top: 48px;
+}
+
+.grid-item {
+    background-color: whitesmoke;
+    border: 1px inset;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container>.grid-item>p:hover {
+    cursor: pointer;
+}
+
+
+/*End Of The Grid Style*/
+
+.ButtonMove {
+    display: grid;
+    /* align-items: center; */
+    /* justify-content: center; */
+    grid-column-start: 2;
+    position: absolute;
+    left: -19px;
+    right: 0;
+    bottom: 0;
+    width: 22%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #0062A8;
+    color: snow;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: -50px;
+}
