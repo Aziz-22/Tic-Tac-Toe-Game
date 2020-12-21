@@ -4,12 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/GamePageStyle.css">
     <title>Document</title>
 </head>
 
 <body>
 
     <h1>Second Player</h1>
+
+    <div class="grid-container">
+        <h3 class="Instruction">Choose One Of The Cells To Play, Then Click Next.</h3>
+        <div class="grid-item">
+            <p onclick="funCell1()" id="cell1">1</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell2()" id="cell2">2</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell3()" id="cell3">3</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell4()" id="cell4">4</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell5()" id="cell5">5</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell6()" id="cell6">6</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell7()" id="cell7">7</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell8()" id="cell8">8</p>
+        </div>
+
+        <div class="grid-item">
+            <p onclick="funCell9()" id="cell9">9</p>
+        </div>
+
+        <button id="btnMove" onclick="location.href = 'GamePage.html'" class="ButtonMove">Next Move</button>
+
+    </div>
+
+    <script src="./Js/testAction.js"></script>
 </body>
 
 </html>

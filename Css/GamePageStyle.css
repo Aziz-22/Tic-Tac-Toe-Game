@@ -50,7 +50,7 @@
 .Instruction {
     display: grid;
     grid-column-start: 2;
-    margin-left: -50px;
+    margin-left: -125px;
     margin-top: 10px;
     position: absolute;
 }

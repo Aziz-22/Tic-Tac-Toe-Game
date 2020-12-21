@@ -1,5 +1,6 @@
-console.log(" ===> X Player <=== ");
+console.log(" ===> O Player <=== ");
 
+//sessionStorage.clear();
 
 cell1 = document.getElementById("cell1");
 cell2 = document.getElementById("cell2");
@@ -11,29 +12,6 @@ cell7 = document.getElementById("cell7");
 cell8 = document.getElementById("cell8");
 cell9 = document.getElementById("cell9");
 buttonMove = document.getElementById("btnMove");
-cells = document.querySelectorAll(".cells");
-
-let i = 0;
-let flag = false;
-
-// I wanna Check The boad if it is empty, I will go to setCells, Otherwise Go To Display
-
-
-if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-
-    console.log("Page Is Reloading");
-    setCells();
-    flag = true;
-}
-// else {
-
-//     console.log("Nothing");
-//     setCells();
-//     flag = true;
-// }
-
-
-
 
 function setCells() {
 
@@ -49,28 +27,8 @@ function setCells() {
     sessionStorage.setItem("cell8", "8");
     sessionStorage.setItem("cell9", "9");
 }
-// setCells();
-
-// if(board not empyt){
-
-//     displayBoard();
-// }
-
-function reStart() {
-
-    sessionStorage.removeItem("cell1");
-    alert("HHHH");
-    //console.log("I am In Restart Function")
-    sessionStorage.clear();
-    setCells();
-
-}
 
 function displayBoard() {
-    console.log("I'm In DIsplay Function");
-
-
-    // cell1.innerText = sessionStorage.getItem(setCells());
     cell1.innerText = sessionStorage.getItem("cell1");
     cell2.innerText = sessionStorage.getItem("cell2");
     cell3.innerText = sessionStorage.getItem("cell3");
@@ -82,51 +40,60 @@ function displayBoard() {
     cell9.innerText = sessionStorage.getItem("cell9");
 
 }
+displayBoard();
+// cell2.innerText = sessionStorage.getItem("cell2");
+// cell3.innerText = sessionStorage.getItem("cell3");
+// cell4.innerText = sessionStorage.getItem("cell4");
+// cell5.innerText = sessionStorage.getItem("cell5");
+// cell6.innerText = sessionStorage.getItem("cell6");
+// cell7.innerText = sessionStorage.getItem("cell7");
+// cell8.innerText = sessionStorage.getItem("cell8");
+// cell9.innerText = sessionStorage.getItem("cell9");
 
-if (flag == false) {
+//cell1.innerText = sessionStorage.getItem("cell1");
 
-    console.log("Flag False")
+// sessionStorage.getItem("cell1");
+// cell2.innerText = sessionStorage.getItem("cell2");
+// sessionStorage.getItem("cell3");
+// sessionStorage.getItem("cell4");
+// sessionStorage.getItem("cell5");
 
-    displayBoard();
-}
-
-
-
+//displayBoard();
 
 function funCell1() {
 
-    if (cell1.innerText == "O") {
+    if (cell1.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell1.innerText = "X";
-        cell1.style.color = "red";
-        sessionStorage.setItem("cell1", "X");
-        // console.log(sessionStorage.getItem("cell1"));
+        cell1.innerText = "O";
+        cell1.style.color = "blue";
+        sessionStorage.setItem("cell1", "O");
+        console.log(sessionStorage.getItem("cell1"));
     }
 
 }
 
 function funCell2() {
 
-    if (cell2.innerText == "O") {
+    if (cell2.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell2.innerText = "X";
-        cell2.style.color = "red";
-        sessionStorage.setItem("cell2", "X");
-        console.log("cell2 = ", sessionStorage.getItem("cell2"));
+        cell2.innerText = "O";
+        cell2.style.color = "blue";
+        sessionStorage.setItem("cell2", "O");
+        console.log(sessionStorage.getItem("cell2"));
     }
 
 }
 
 function funCell3() {
 
-    if (cell3.innerText == "O") {
+    if (cell3.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell3.innerText = "X";
-        cell3.style.color = "red";
-        sessionStorage.setItem("cell3", "X");
+        cell3.innerText = "O";
+        cell3.style.color = "blue";
+        sessionStorage.setItem("cell3", "O");
         console.log(sessionStorage.getItem("cell3"));
     }
 
@@ -134,12 +101,12 @@ function funCell3() {
 
 function funCell4() {
 
-    if (cell4.innerText == "O") {
+    if (cell4.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell4.innerText = "X";
-        cell4.style.color = "red";
-        sessionStorage.setItem("cell4", "X");
+        cell4.innerText = "O";
+        cell4.style.color = "blue";
+        sessionStorage.setItem("cell4", "O");
         console.log(sessionStorage.getItem("cell4"));
     }
 
@@ -147,12 +114,12 @@ function funCell4() {
 
 function funCell5() {
 
-    if (cell5.innerText == "O") {
+    if (cell5.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell5.innerText = "X";
-        cell5.style.color = "red";
-        sessionStorage.setItem("cell5", "X");
+        cell5.innerText = "O";
+        cell5.style.color = "blue";
+        sessionStorage.setItem("cell5", "O");
         console.log(sessionStorage.getItem("cell5"));
     }
 
@@ -160,12 +127,12 @@ function funCell5() {
 
 function funCell6() {
 
-    if (cell6.innerText == "O") {
+    if (cell6.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell6.innerText = "X";
-        cell6.style.color = "red";
-        sessionStorage.setItem("cell6", "X");
+        cell6.innerText = "O";
+        cell6.style.color = "blue";
+        sessionStorage.setItem("cell6", "O");
         console.log(sessionStorage.getItem("cell6"));
     }
 
@@ -173,12 +140,12 @@ function funCell6() {
 
 function funCell7() {
 
-    if (cell7.innerText == "O") {
+    if (cell7.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell7.innerText = "X";
-        cell7.style.color = "red";
-        sessionStorage.setItem("cell7", "X");
+        cell7.innerText = "O";
+        cell7.style.color = "blue";
+        sessionStorage.setItem("cell7", "O");
         console.log(sessionStorage.getItem("cell7"));
     }
 
@@ -186,12 +153,12 @@ function funCell7() {
 
 function funCell8() {
 
-    if (cell8.innerText == "O") {
+    if (cell8.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell8.innerText = "X";
-        cell8.style.color = "red";
-        sessionStorage.setItem("cell8", "X");
+        cell8.innerText = "O";
+        cell8.style.color = "blue";
+        sessionStorage.setItem("cell8", "O");
         console.log(sessionStorage.getItem("cell8"));
     }
 
@@ -199,12 +166,12 @@ function funCell8() {
 
 function funCell9() {
 
-    if (cell9.innerText == "O") {
+    if (cell9.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
-        cell9.innerText = "X";
-        cell9.style.color = "red";
-        sessionStorage.setItem("cell9", "X");
+        cell9.innerText = "O";
+        cell9.style.color = "blue";
+        sessionStorage.setItem("cell9", "O");
         console.log(sessionStorage.getItem("cell9"));
     }
 
