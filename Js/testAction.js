@@ -12,6 +12,9 @@ cell7 = document.getElementById("cell7");
 cell8 = document.getElementById("cell8");
 cell9 = document.getElementById("cell9");
 buttonMove = document.getElementById("btnMove");
+cells = $(".cells");
+
+
 
 function setCells() {
 
@@ -28,37 +31,7 @@ function setCells() {
     sessionStorage.setItem("cell9", "9");
 }
 
-function displayBoard() {
-    cell1.innerText = sessionStorage.getItem("cell1");
-    cell2.innerText = sessionStorage.getItem("cell2");
-    cell3.innerText = sessionStorage.getItem("cell3");
-    cell4.innerText = sessionStorage.getItem("cell4");
-    cell5.innerText = sessionStorage.getItem("cell5");
-    cell6.innerText = sessionStorage.getItem("cell6");
-    cell7.innerText = sessionStorage.getItem("cell7");
-    cell8.innerText = sessionStorage.getItem("cell8");
-    cell9.innerText = sessionStorage.getItem("cell9");
 
-}
-displayBoard();
-// cell2.innerText = sessionStorage.getItem("cell2");
-// cell3.innerText = sessionStorage.getItem("cell3");
-// cell4.innerText = sessionStorage.getItem("cell4");
-// cell5.innerText = sessionStorage.getItem("cell5");
-// cell6.innerText = sessionStorage.getItem("cell6");
-// cell7.innerText = sessionStorage.getItem("cell7");
-// cell8.innerText = sessionStorage.getItem("cell8");
-// cell9.innerText = sessionStorage.getItem("cell9");
-
-//cell1.innerText = sessionStorage.getItem("cell1");
-
-// sessionStorage.getItem("cell1");
-// cell2.innerText = sessionStorage.getItem("cell2");
-// sessionStorage.getItem("cell3");
-// sessionStorage.getItem("cell4");
-// sessionStorage.getItem("cell5");
-
-//displayBoard();
 
 function funCell1() {
 
@@ -176,3 +149,95 @@ function funCell9() {
     }
 
 }
+
+
+function displayBoard() {
+
+
+
+    cell1.innerText = sessionStorage.getItem("cell1");
+    cell2.innerText = sessionStorage.getItem("cell2");
+    cell3.innerText = sessionStorage.getItem("cell3");
+    cell4.innerText = sessionStorage.getItem("cell4");
+    cell5.innerText = sessionStorage.getItem("cell5");
+    cell6.innerText = sessionStorage.getItem("cell6");
+    cell7.innerText = sessionStorage.getItem("cell7");
+    cell8.innerText = sessionStorage.getItem("cell8");
+    cell9.innerText = sessionStorage.getItem("cell9");
+    checkWinner();
+    //console.log(cell1.innerHTML, cell2.innerText, cell3.innerText);
+
+}
+
+
+
+function checkWinner() {
+
+    // Check Rows 
+    if (cell1.innerHTML == "X" && cell2.innerHTML == "X" && cell3.innerHTML == "X") {
+
+        alert("Congarts, The X Player Won The Game !! ");
+
+        buttonMove.style.cursor = "not-allowed";
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
+        // Repeate These Steps.. 
+
+    } else if (cell4.innerHTML == "X" && cell5.innerHTML == "X" && cell6.innerHTML == "X") {
+
+        alert("Congarts, The X Player Won The Game !! ");
+        location.href = "GamePage.html";
+
+    } else if (cell7.innerHTML == "X" && cell8.innerHTML == "X" && cell9.innerHTML == "X") {
+
+        alert("Congarts, The X Player Won The Game !! ");
+        location.href = "GamePage.html";
+        // End Rows
+
+    } else if (cell1.innerHTML == "X" && cell4.innerHTML == "X" && cell7.innerHTML == "X") { // Checks Columns 
+
+        alert("Congarts, The X Player Won The Game !! ");
+        location.href = "GamePage.html";
+
+    } else if (cell2.innerHTML == "X" && cell5.innerHTML == "X" && cell8.innerHTML == "X") {
+        alert("Congarts, The X Player Won The Game !! ");
+        location.href = "GamePage.html";
+
+
+    } else if (cell3.innerHTML == "X" && cell6.innerHTML == "X" && cell9.innerHTML == "X") {
+        alert("Congarts, The X Player Won The Game !! ");
+        location.href = "GamePage.html";
+        // End Columns 
+
+    } else if (cell1.innerHTML == "X" && cell5.innerHTML == "X" && cell8.innerHTML == "X") { // Checks Diognals 
+        alert("Congarts, The X Player Won The Game !! ");
+        location.href = "GamePage.html";
+
+    } else if (cell3.innerHTML == "X" && cell5.innerHTML == "X" && cell7.innerHTML == "X") {
+        alert("Congarts, The X Player Won The Game !! ");
+        location.href = "GamePage.html";
+
+        // End Diognals
+    } else {
+
+        console.log("Still...");
+    }
+
+}
+
+function reStart() { // When The User Clicks The Restart Button, It Will Make A New Game
+
+
+    //sessionStorage.clear();
+    setCells();
+    window.location.reload();
+
+
+}
+
+
+sessionStorage.setItem("Count", "1");
+
+displayBoard();

@@ -76,7 +76,7 @@
     text-align: center;
 }
 
-.grid-container>.grid-item>p:hover {
+.grid-item:hover {
     cursor: pointer;
 }
 
@@ -87,7 +87,7 @@
     display: grid;
     /* align-items: center; */
     /* justify-content: center; */
-    grid-column-start: 2;
+    grid-column-start: 3;
     position: absolute;
     left: -19px;
     right: 0;
@@ -96,6 +96,25 @@
     height: 10%;
     border-radius: 10px;
     background-color: #0062A8;
+    color: snow;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: -50px;
+}
+
+.RestartButton {
+    display: grid;
+    /* align-items: center; */
+    /* justify-content: center; */
+    grid-column-start: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 18%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #FF2525;
     color: snow;
     font-size: 20px;
     cursor: pointer;
