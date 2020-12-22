@@ -41,7 +41,8 @@ function funCell1() {
         cell1.innerText = "O";
         cell1.style.color = "blue";
         sessionStorage.setItem("cell1", "O");
-        console.log(sessionStorage.getItem("cell1"));
+        cells.css("pointerEvents", "none");
+
     }
 
 }
@@ -54,7 +55,8 @@ function funCell2() {
         cell2.innerText = "O";
         cell2.style.color = "blue";
         sessionStorage.setItem("cell2", "O");
-        console.log(sessionStorage.getItem("cell2"));
+        cells.css("pointerEvents", "none");
+
     }
 
 }
@@ -67,7 +69,8 @@ function funCell3() {
         cell3.innerText = "O";
         cell3.style.color = "blue";
         sessionStorage.setItem("cell3", "O");
-        console.log(sessionStorage.getItem("cell3"));
+        cells.css("pointerEvents", "none");
+        // console.log(sessionStorage.getItem("cell3"));
     }
 
 }
@@ -80,7 +83,8 @@ function funCell4() {
         cell4.innerText = "O";
         cell4.style.color = "blue";
         sessionStorage.setItem("cell4", "O");
-        console.log(sessionStorage.getItem("cell4"));
+        cells.css("pointerEvents", "none");
+        // console.log(sessionStorage.getItem("cell4"));
     }
 
 }
@@ -93,7 +97,8 @@ function funCell5() {
         cell5.innerText = "O";
         cell5.style.color = "blue";
         sessionStorage.setItem("cell5", "O");
-        console.log(sessionStorage.getItem("cell5"));
+        cells.css("pointerEvents", "none");
+        // console.log(sessionStorage.getItem("cell5"));
     }
 
 }
@@ -106,7 +111,8 @@ function funCell6() {
         cell6.innerText = "O";
         cell6.style.color = "blue";
         sessionStorage.setItem("cell6", "O");
-        console.log(sessionStorage.getItem("cell6"));
+        cells.css("pointerEvents", "none");
+        // console.log(sessionStorage.getItem("cell6"));
     }
 
 }
@@ -119,7 +125,8 @@ function funCell7() {
         cell7.innerText = "O";
         cell7.style.color = "blue";
         sessionStorage.setItem("cell7", "O");
-        console.log(sessionStorage.getItem("cell7"));
+        cells.css("pointerEvents", "none");
+        // console.log(sessionStorage.getItem("cell7"));
     }
 
 }
@@ -132,7 +139,8 @@ function funCell8() {
         cell8.innerText = "O";
         cell8.style.color = "blue";
         sessionStorage.setItem("cell8", "O");
-        console.log(sessionStorage.getItem("cell8"));
+        cells.css("pointerEvents", "none");
+        // console.log(sessionStorage.getItem("cell8"));
     }
 
 }
@@ -145,7 +153,8 @@ function funCell9() {
         cell9.innerText = "O";
         cell9.style.color = "blue";
         sessionStorage.setItem("cell9", "O");
-        console.log(sessionStorage.getItem("cell9"));
+        cells.css("pointerEvents", "none");
+        // console.log(sessionStorage.getItem("cell9"));
     }
 
 }
@@ -173,12 +182,17 @@ function displayBoard() {
 
 function checkWinner() {
 
+
+
     // Check Rows 
     if (cell1.innerHTML == "X" && cell2.innerHTML == "X" && cell3.innerHTML == "X") {
 
         alert("Congarts, The X Player Won The Game !! ");
-
+        //location.href = "GamePage.html";
         buttonMove.style.cursor = "not-allowed";
+        cell1.style.color = "red";
+        cell2.style.color = "red";
+        cell3.style.color = "red";
         $("div.grid-item").on("mouseenter", function() {
 
             $("div.grid-item").css("cursor", "not-allowed");
@@ -188,38 +202,105 @@ function checkWinner() {
     } else if (cell4.innerHTML == "X" && cell5.innerHTML == "X" && cell6.innerHTML == "X") {
 
         alert("Congarts, The X Player Won The Game !! ");
-        location.href = "GamePage.html";
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+        cell4.style.color = "red";
+        cell5.style.color = "red";
+        cell6.style.color = "red";
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
+
 
     } else if (cell7.innerHTML == "X" && cell8.innerHTML == "X" && cell9.innerHTML == "X") {
 
         alert("Congarts, The X Player Won The Game !! ");
-        location.href = "GamePage.html";
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+        cell7.style.color = "red";
+        cell8.style.color = "red";
+        cell9.style.color = "red";
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
         // End Rows
 
     } else if (cell1.innerHTML == "X" && cell4.innerHTML == "X" && cell7.innerHTML == "X") { // Checks Columns 
 
         alert("Congarts, The X Player Won The Game !! ");
-        location.href = "GamePage.html";
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+        cell1.style.color = "red";
+        cell4.style.color = "red";
+        cell7.style.color = "red";
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
 
     } else if (cell2.innerHTML == "X" && cell5.innerHTML == "X" && cell8.innerHTML == "X") {
         alert("Congarts, The X Player Won The Game !! ");
-        location.href = "GamePage.html";
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+        cell2.style.color = "red";
+        cell5.style.color = "red";
+        cell8.style.color = "red";
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
 
 
     } else if (cell3.innerHTML == "X" && cell6.innerHTML == "X" && cell9.innerHTML == "X") {
         alert("Congarts, The X Player Won The Game !! ");
-        location.href = "GamePage.html";
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+        cell3.style.color = "red";
+        cell6.style.color = "red";
+        cell9.style.color = "red";
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
         // End Columns 
 
-    } else if (cell1.innerHTML == "X" && cell5.innerHTML == "X" && cell8.innerHTML == "X") { // Checks Diognals 
+    } else if (cell1.innerHTML == "X" && cell5.innerHTML == "X" && cell9.innerHTML == "X") { // Checks Diognals 
         alert("Congarts, The X Player Won The Game !! ");
-        location.href = "GamePage.html";
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+        cell1.style.color = "red";
+        cell5.style.color = "red";
+        cell9.style.color = "red";
+        $("div.grid-item").on("mouseenter", function() {
 
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
     } else if (cell3.innerHTML == "X" && cell5.innerHTML == "X" && cell7.innerHTML == "X") {
         alert("Congarts, The X Player Won The Game !! ");
-        location.href = "GamePage.html";
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+        cell3.style.color = "red";
+        cell5.style.color = "red";
+        cell7.style.color = "red";
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
 
         // End Diognals
+    } else if ("1" != cell1.innerHTML && "2" != cell2.innerHTML && "3" != cell3.innerHTML && "4" != cell4.innerHTML && "5" != cell5.innerHTML && "6" != cell6.innerHTML && "7" != cell7.innerHTML && "8" != cell8.innerHTML && "9" != cell9.innerHTML) {
+
+        alert("Tied Match.. Try Again");
+        //location.href = "GamePage.html";
+        buttonMove.style.cursor = "not-allowed";
+
+        $("div.grid-item").on("mouseenter", function() {
+
+            $("div.grid-item").css("cursor", "not-allowed");
+        });
+
     } else {
 
         console.log("Still...");
