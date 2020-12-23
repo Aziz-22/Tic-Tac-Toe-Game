@@ -263,15 +263,6 @@ function displayBoard() {
     checkWinner();
 
 }
-//createBoard();
-
-// if (flag == false) { // This Condition For Check If The Board Is Empty Or Not,
-
-//     console.log("Flag False")
-//     displayBoard();
-
-
-// }
 
 
 
@@ -440,5 +431,20 @@ function checkWinner() {
 }
 
 
+
 setCells();
 displayBoard();
+
+function NextTurn() { // To Check If The First Move Empty Or Not
+
+
+    console.log(cell1.innerText);
+    if (cell1.innerText == "1" && cell2.innerText == "2" && cell3.innerText == "3" && cell4.innerText == "4" && cell5.innerText == "5" && cell6.innerText == "6" && cell7.innerText == "7" && cell8.innerText == "8" && cell9.innerText == "9") {
+
+        alert("Please Choose A Cell");
+
+    } else {
+
+        location.href = "SecondPlayer.html";
+    }
+}
