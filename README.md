@@ -56,7 +56,7 @@
 
 
 function reStart() { // When The User Clicks The Restart Button, It Will Make A New Game
-**This Function, It called when the player click restart button**
+**This Function, It called when the player clicks restart button.**
 
     sessionStorage.clear();
     window.location.reload();
