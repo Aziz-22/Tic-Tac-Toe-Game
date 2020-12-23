@@ -33,9 +33,9 @@ function playAudio() { // This Function Play An Audio When The User Clicks On A 
 
 }
 
-let WinnerSound = document.getElementById("myAudio1");
+let WinnerSound = document.getElementById("myAudio2");
 
-function playAudio1() { // This Function Play An Audio When The User Clicks On A Cell.
+function playAudio1() { // This Function Play An Audio When O Got Won The Game
     WinnerSound.play();
 
 }
@@ -59,7 +59,7 @@ function setCells() {
 
 function funCell1() {
 
-    if (cell1.innerText == "X") {
+    if (cell1.innerText == "X" || cell1.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -74,7 +74,7 @@ function funCell1() {
 
 function funCell2() {
 
-    if (cell2.innerText == "X") {
+    if (cell2.innerText == "X" || cell2.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -89,7 +89,7 @@ function funCell2() {
 
 function funCell3() {
 
-    if (cell3.innerText == "X") {
+    if (cell3.innerText == "X" || cell3.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -104,7 +104,7 @@ function funCell3() {
 
 function funCell4() {
 
-    if (cell4.innerText == "X") {
+    if (cell4.innerText == "X" || cell4.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -119,7 +119,7 @@ function funCell4() {
 
 function funCell5() {
 
-    if (cell5.innerText == "X") {
+    if (cell5.innerText == "X" || cell5.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -134,7 +134,7 @@ function funCell5() {
 
 function funCell6() {
 
-    if (cell6.innerText == "X") {
+    if (cell6.innerText == "X" || cell6.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -149,7 +149,7 @@ function funCell6() {
 
 function funCell7() {
 
-    if (cell7.innerText == "X") {
+    if (cell7.innerText == "X" || cell7.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -164,7 +164,7 @@ function funCell7() {
 
 function funCell8() {
 
-    if (cell8.innerText == "X") {
+    if (cell8.innerText == "X" || cell8.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -179,7 +179,7 @@ function funCell8() {
 
 function funCell9() {
 
-    if (cell9.innerText == "X") {
+    if (cell9.innerText == "X" || cell9.innerText == "O") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -222,10 +222,7 @@ function checkWinner() {
 
         alert("Congarts, The X Player Won The Game !! ");
 
-
-        // document.getElementById("myAudio").play();
-
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell1.style.color = "red";
         cell2.style.color = "red";
@@ -239,7 +236,7 @@ function checkWinner() {
     } else if (cell4.innerHTML == "X" && cell5.innerHTML == "X" && cell6.innerHTML == "X") {
 
         alert("Congarts, The X Player Won The Game !! ");
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell4.style.color = "red";
         cell5.style.color = "red";
@@ -253,7 +250,7 @@ function checkWinner() {
     } else if (cell7.innerHTML == "X" && cell8.innerHTML == "X" && cell9.innerHTML == "X") {
 
         alert("Congarts, The X Player Won The Game !! ");
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell7.style.color = "red";
         cell8.style.color = "red";
@@ -267,7 +264,7 @@ function checkWinner() {
     } else if (cell1.innerHTML == "X" && cell4.innerHTML == "X" && cell7.innerHTML == "X") { // Checks Columns 
 
         alert("Congarts, The X Player Won The Game !! ");
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell1.style.color = "red";
         cell4.style.color = "red";
@@ -279,7 +276,7 @@ function checkWinner() {
 
     } else if (cell2.innerHTML == "X" && cell5.innerHTML == "X" && cell8.innerHTML == "X") {
         alert("Congarts, The X Player Won The Game !! ");
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell2.style.color = "red";
         cell5.style.color = "red";
@@ -292,7 +289,7 @@ function checkWinner() {
 
     } else if (cell3.innerHTML == "X" && cell6.innerHTML == "X" && cell9.innerHTML == "X") {
         alert("Congarts, The X Player Won The Game !! ");
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell3.style.color = "red";
         cell6.style.color = "red";
@@ -305,7 +302,7 @@ function checkWinner() {
 
     } else if (cell1.innerHTML == "X" && cell5.innerHTML == "X" && cell9.innerHTML == "X") { // Checks Diognals 
         alert("Congarts, The X Player Won The Game !! ");
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell1.style.color = "red";
         cell5.style.color = "red";
@@ -316,7 +313,7 @@ function checkWinner() {
         });
     } else if (cell3.innerHTML == "X" && cell5.innerHTML == "X" && cell7.innerHTML == "X") {
         alert("Congarts, The X Player Won The Game !! ");
-        //location.href = "GamePage.html";
+        playAudio1()
         buttonMove.style.cursor = "not-allowed";
         cell3.style.color = "red";
         cell5.style.color = "red";

@@ -18,10 +18,10 @@
 
 # My stratigies for solving the problem
 
-*First, I have made the board that is contain the numbers from 1 to 9 which is 3 x 3 grid by using the grid property.*
-*Second, I have decided that the first player will automaticlly had X and the second player had O*.
-*Third, I have made it seems like this way -> When the game start, the player should choose a cell to play and then click the button to move to the second player and so on.*
-*Finally, I made a function to check if there is a winner or would be a tied game.*
+- First, I have made the board that is contain the numbers from 1 to 9 which is 3 x 3 grid by using the grid property.*
+- Second, I have decided that the first player will automaticlly had X and the second player had O*.
+- Third, I have made it seems like this way -> When the game start, the player should choose a cell to play and then click the button to move to the second player and so on.*
+- Finally, I made a function to check if there is a winner or would be a tied game.*
 
 
 

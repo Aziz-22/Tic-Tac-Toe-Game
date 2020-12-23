@@ -67,7 +67,7 @@ function funCell1() {
 
 
 
-    if (cell1.innerText == "O") {
+    if (cell1.innerText == "O" || cell1.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -84,7 +84,7 @@ function funCell2() {
 
 
 
-    if (cell2.innerText == "O") {
+    if (cell2.innerText == "O" || cell2.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -101,7 +101,7 @@ function funCell3() {
 
 
 
-    if (cell3.innerText == "O") {
+    if (cell3.innerText == "O" || cell3.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -118,7 +118,7 @@ function funCell4() {
 
 
 
-    if (cell4.innerText == "O") {
+    if (cell4.innerText == "O" || cell4.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -135,7 +135,7 @@ function funCell5() {
 
 
 
-    if (cell5.innerText == "O") {
+    if (cell5.innerText == "O" || cell5.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -151,7 +151,7 @@ function funCell5() {
 function funCell6() {
 
 
-    if (cell6.innerText == "O") {
+    if (cell6.innerText == "O" || cell6.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -168,7 +168,7 @@ function funCell7() {
 
 
 
-    if (cell7.innerText == "O") {
+    if (cell7.innerText == "O" || cell7.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -185,7 +185,7 @@ function funCell8() {
 
     console.log("Clicked");
 
-    if (cell8.innerText == "O") {
+    if (cell8.innerText == "O" || cell8.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -202,7 +202,7 @@ function funCell9() {
 
 
 
-    if (cell9.innerText == "O") {
+    if (cell9.innerText == "O" || cell9.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
         playAudio();
@@ -326,7 +326,7 @@ function checkWinner() {
     } else if (cell4.innerHTML == "O" && cell5.innerHTML == "O" && cell6.innerHTML == "O") {
 
         alert("Congarts, The O Player Won The Game !! ");
-
+        WinnerSound();
         buttonMove.style.cursor = "not-allowed";
         cell4.style.color = "blue";
         cell5.style.color = "blue";
@@ -340,7 +340,7 @@ function checkWinner() {
     } else if (cell7.innerHTML == "O" && cell8.innerHTML == "O" && cell9.innerHTML == "O") {
 
         alert("Congarts, The O Player Won The Game !! ");
-
+        WinnerSound();
         buttonMove.style.cursor = "not-allowed";
         cell7.style.color = "blue";
         cell8.style.color = "blue";
@@ -355,7 +355,7 @@ function checkWinner() {
     } else if (cell1.innerHTML == "O" && cell4.innerHTML == "O" && cell7.innerHTML == "O") { // Checks Columns 
 
         alert("Congarts, The O Player Won The Game !! ");
-
+        WinnerSound();
         buttonMove.style.cursor = "not-allowed";
         cell1.style.color = "blue";
         cell4.style.color = "blue";
@@ -368,7 +368,7 @@ function checkWinner() {
 
     } else if (cell2.innerHTML == "O" && cell5.innerHTML == "O" && cell8.innerHTML == "O") {
         alert("Congarts, The O Player Won The Game !! ");
-
+        WinnerSound();
         buttonMove.style.cursor = "not-allowed";
         cell2.style.color = "blue";
         cell5.style.color = "blue";
@@ -382,7 +382,7 @@ function checkWinner() {
 
     } else if (cell3.innerHTML == "O" && cell6.innerHTML == "O" && cell9.innerHTML == "O") {
         alert("Congarts, The O Player Won The Game !! ");
-
+        WinnerSound();
         buttonMove.style.cursor = "not-allowed";
         cell3.style.color = "blue";
         cell6.style.color = "blue";
@@ -396,7 +396,7 @@ function checkWinner() {
 
     } else if (cell1.innerHTML == "O" && cell5.innerHTML == "O" && cell9.innerHTML == "O") { // Checks Diognals 
         alert("Congarts, The O Player Won The Game !! ");
-
+        WinnerSound();
         buttonMove.style.cursor = "not-allowed";
         cell1.style.color = "blue";
         cell5.style.color = "blue";
@@ -409,7 +409,7 @@ function checkWinner() {
 
     } else if (cell3.innerHTML == "O" && cell5.innerHTML == "O" && cell7.innerHTML == "O") {
         alert("Congarts, The O Player Won The Game !! ");
-
+        WinnerSound();
         buttonMove.style.cursor = "not-allowed";
         cell3.style.color = "blue";
         cell5.style.color = "blue";
