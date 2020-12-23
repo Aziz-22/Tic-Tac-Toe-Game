@@ -20,42 +20,57 @@
             <ul>
 
                 <li><a href="HomePage.html" class="anchorsList"> Home</a></li>
-                <li><a href="#" class="anchorsList"> How To Play</a></li>
-                <li><a href="#" class="anchorsList"> History</a></li>
+                <li><a href="https://www.wikihow.com/Play-Tic-Tac-Toe" class="anchorsList"> How To Play</a></li>
+
             </ul>
 
-            <h1 class="NameOfAGame">Tic Tac Toe Game</h1>
+            <button onclick="playBackSound()" class="buttonPlayMusic">Play Music</button>
+            <button onclick="muteBackSound()" class="buttonMuteMusic">Mute Music</button>
+
+            <h1 class="NameOfAGame ">Tic Tac Toe Game</h1>
 
 
 
         </nav>
     </div>
 
-    <div class="BodyDiv">
+    <div class="BodyDiv ">
 
-        <h1 class="welcome">Welcome To The Tic Tac Toe Game!</h1>
+        <h1 class="welcome ">Welcome To The Tic Tac Toe Game!</h1>
 
-        <p class="SomePhragraph1"> We Hope To Enjoy With Us..</p>
+        <p class="SomePhragraph1 "> We Hope To Enjoy With Us..</p>
 
-        <div class="WhatIs">
-            <p class="Question"> What Is Tic Tac Toe Game?</p>
+        <div class="WhatIs ">
+            <p class="Question "> What Is Tic Tac Toe Game?</p>
 
-            <p class="Answer"> It is a game among two players, X and O, each player has a mark X or O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner. </p>
+            <p class="Answer "> It is a game among two players, X and O, each player has a mark X or O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner. </p>
         </div>
 
-        <div class="LetUsPlay">
+        <div class="LetUsPlay ">
 
-            <img class="GameImage" src="Images/GameImage-removebg-preview.png" alt="Tic Tac Toe Image">
+            <img class="GameImage " src="Images/GameImage-removebg-preview.png " alt="Tic Tac Toe Image ">
 
 
-            <button onclick="location.href = 'GamePage.html'" class="ButtonPlay">Let's Play</button>
+            <button onclick="location.href='GamePage.html' " class="ButtonPlay ">Let's Play</button>
+
+            <!-- <button type="button" onclick="HiddenFun()" style="display: none;" id="hiddenBtn">Let's Play</button> -->
 
 
         </div>
 
 
     </div>
+    <audio id="myAudio1" loop="loop">
+        <source src="./Audio/bensound-sunny.mp3" >
+    </audio>
 
+
+    <audio id="myAudio1">
+        <source src="./Audio/bensound-sunny.mp3" >
+    </audio>
+
+
+    <script src="./Js/BackgroundSound.js "></script>
 </body>
 
 </html>

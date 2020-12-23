@@ -14,7 +14,31 @@ cell9 = document.getElementById("cell9");
 buttonMove = document.getElementById("btnMove");
 cells = $(".cells");
 
+let backgroundSound = document.getElementById("myAudio1");
 
+function playBackSound() {
+
+    backgroundSound.play();
+}
+
+function muteBackSound() {
+
+    backgroundSound.pause();
+}
+
+let clickSound = document.getElementById("myAudio");
+
+function playAudio() { // This Function Play An Audio When The User Clicks On A Cell.
+    clickSound.play();
+
+}
+
+let WinnerSound = document.getElementById("myAudio1");
+
+function playAudio1() { // This Function Play An Audio When The User Clicks On A Cell.
+    WinnerSound.play();
+
+}
 
 function setCells() {
 
@@ -38,6 +62,7 @@ function funCell1() {
     if (cell1.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell1.innerText = "O";
         cell1.style.color = "blue";
         sessionStorage.setItem("cell1", "O");
@@ -52,6 +77,7 @@ function funCell2() {
     if (cell2.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell2.innerText = "O";
         cell2.style.color = "blue";
         sessionStorage.setItem("cell2", "O");
@@ -66,6 +92,7 @@ function funCell3() {
     if (cell3.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell3.innerText = "O";
         cell3.style.color = "blue";
         sessionStorage.setItem("cell3", "O");
@@ -80,6 +107,7 @@ function funCell4() {
     if (cell4.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell4.innerText = "O";
         cell4.style.color = "blue";
         sessionStorage.setItem("cell4", "O");
@@ -94,6 +122,7 @@ function funCell5() {
     if (cell5.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell5.innerText = "O";
         cell5.style.color = "blue";
         sessionStorage.setItem("cell5", "O");
@@ -108,6 +137,7 @@ function funCell6() {
     if (cell6.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell6.innerText = "O";
         cell6.style.color = "blue";
         sessionStorage.setItem("cell6", "O");
@@ -122,6 +152,7 @@ function funCell7() {
     if (cell7.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell7.innerText = "O";
         cell7.style.color = "blue";
         sessionStorage.setItem("cell7", "O");
@@ -136,6 +167,7 @@ function funCell8() {
     if (cell8.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell8.innerText = "O";
         cell8.style.color = "blue";
         sessionStorage.setItem("cell8", "O");
@@ -150,6 +182,7 @@ function funCell9() {
     if (cell9.innerText == "X") {
         alert("Choose Another Cell..");
     } else {
+        playAudio();
         cell9.innerText = "O";
         cell9.style.color = "blue";
         sessionStorage.setItem("cell9", "O");
@@ -188,6 +221,10 @@ function checkWinner() {
     if (cell1.innerHTML == "X" && cell2.innerHTML == "X" && cell3.innerHTML == "X") {
 
         alert("Congarts, The X Player Won The Game !! ");
+
+
+        // document.getElementById("myAudio").play();
+
         //location.href = "GamePage.html";
         buttonMove.style.cursor = "not-allowed";
         cell1.style.color = "red";

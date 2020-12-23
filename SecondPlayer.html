@@ -11,10 +11,35 @@
 
 <body>
 
-    <h1>Second Player</h1>
+    <div class="NavBarDiv">
+
+        <nav class="NavTag">
+
+            <ul>
+
+                <li><a href="HomePage.html" class="anchorsList"> Home</a></li>
+                <li><a href="https://www.wikihow.com/Play-Tic-Tac-Toe" class="anchorsList"> How To Play</a></li>
+
+            </ul>
+
+            <button onclick="playBackSound()" class="buttonPlayMusic">Play Music</button>
+            <button onclick="muteBackSound()" class="buttonMuteMusic">Mute Music</button>
+
+            <h1 class="NameOfAGame ">Tic Tac Toe Game</h1>
+
+
+
+        </nav>
+    </div>
+
 
     <div class="grid-container">
         <h3 class="Instruction">Choose One Of The Cells To Play, Then Click Next.</h3>
+
+        <h3 class="LeftText">Now, O's Turn</h3>
+        <h3 class="RightText">THINK Before You Choose</h3>
+
+
         <div class="grid-item">
             <p class="cells" onclick="funCell1()" id="cell1">1</p>
         </div>
@@ -55,6 +80,23 @@
         <button id="" onclick="reStart()" class="RestartButton">Restart</button>
 
     </div>
+
+    <audio id="myAudio">
+
+        <source src="./Audio/mixkit-unlock-game-notification-253.wav">
+    </audio>
+    <audio id="myAudio1" loop="loop">
+        <source src="./Audio/bensound-sunny.mp3" >
+    </audio>
+
+
+    <audio id="myAudio1">
+        <source src="./Audio/bensound-sunny.mp3" >
+    </audio>
+
+    <audio id="myAudio3">
+        <source src="./Audio/SMALL_CROWD_APPLAUSE-Yannick_Lemieux-1268806408.mp3" >
+    </audio>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Js/SecondAction.js"></script>

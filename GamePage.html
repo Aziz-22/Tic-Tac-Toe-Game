@@ -18,10 +18,12 @@
             <ul>
 
                 <li><a href="HomePage.html" class="anchorsList"> Home</a></li>
-                <li><a href="#" class="anchorsList"> How To Play</a></li>
-                <li><a href="#" class="anchorsList"> History</a></li>
+                <li><a href="https://www.wikihow.com/Play-Tic-Tac-Toe" class="anchorsList"> How To Play</a></li>
+
             </ul>
 
+            <button onclick="playBackSound()" class="buttonPlayMusic">Play Music</button>
+            <button onclick="muteBackSound()" class="buttonMuteMusic">Mute Music</button>
             <h1 class="NameOfAGame">Tic Tac Toe Game</h1>
 
 
@@ -30,6 +32,10 @@
     </div>
 
     <div class="grid-container">
+
+        <h3 class="LeftText">Now, X's Turn</h3>
+        <h3 class="RightText">THINK Before You Choose</h3>
+
         <h3 class="Instruction">Choose One Of The Cells To Play, Then Click Next.</h3>
         <div class="grid-item">
             <p class="cells" onclick="funCell1()" id="cell1">1</p>
@@ -69,9 +75,36 @@
 
         <button id="btnMove" onclick="location.href = 'SecondPlayer.html'" class="ButtonMove">Next Move</button>
         <button id="" onclick="reStart()" class="RestartButton">Restart</button>
+        <button type="button" onclick="HiddenFun()" style="display: none;" id="hiddenBtn">Let's Play</button>
 
 
     </div>
+
+
+
+    <audio id="myAudio">
+        <source src="./Audio/CymbalCrash CRT043807.mp3" >
+        
+    </audio>
+
+    <audio id="myAudio1" loop="loop">
+        <source src="./Audio/bensound-sunny.mp3" >
+    </audio>
+
+
+    <audio id="myAudio1">
+        <source src="./Audio/bensound-sunny.mp3" >
+    </audio>
+
+
+    <audio id="myAudio2">
+        <source src="./Audio/SMALL_CROWD_APPLAUSE-Yannick_Lemieux-1268806408.mp3" >
+        
+    </audio>
+
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Js/MoveAction.js"></script>

@@ -93,7 +93,7 @@
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .LetUsPlay {
@@ -133,4 +133,34 @@
     color: snow;
     font-size: 20px;
     cursor: pointer;
+}
+
+.buttonPlayMusic {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 80px;
+    top: 60px;
+    width: 7%;
+}
+
+.buttonMuteMusic {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 230px;
+    top: 60px;
+    width: 7%;
+}
+
+.buttonPlayMusic:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: navy;
+}
+
+.buttonMuteMusic:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
 }

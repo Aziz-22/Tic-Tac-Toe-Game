@@ -120,3 +120,55 @@
     cursor: pointer;
     margin-bottom: -50px;
 }
+
+.buttonPlayMusic {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 80px;
+    top: 60px;
+    width: 7%;
+}
+
+.buttonMuteMusic {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 230px;
+    top: 60px;
+    width: 7%;
+}
+
+.buttonPlayMusic:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: navy;
+}
+
+.buttonMuteMusic:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+}
+
+.LeftText {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    top: 191px;
+    left: 340px;
+    color: navy;
+    font-family: cursive;
+}
+
+.RightText {
+    font-weight: bold;
+    color: green;
+    position: absolute;
+    bottom: 0;
+    top: 191px;
+    left: 1050px;
+    right: 0px;
+    display: flex;
+    font-family: cursive;
+}
